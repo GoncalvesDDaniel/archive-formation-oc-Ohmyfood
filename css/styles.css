@@ -11,9 +11,12 @@
     --fs-title: 24px;
     --ffs-sub-title: 18px;
 
-    --color-main: #9356dc;
-    --color-second: #ff79da;
-    --color-third: #99e2d0;
+    --color-main-300: #9356dc;
+    --color-main-600: #ff79da;
+    --color-second-300: #89c8fa;
+    --color-second-600: #003a68;
+    --color-third-300: #99e2d0;
+    --color-third-600: #008766;
 
     --color-bg-light: #f6f6f6;
     --color-bg-medium: #eaeaea;
