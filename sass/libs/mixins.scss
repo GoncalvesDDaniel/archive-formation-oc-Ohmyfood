@@ -1,0 +1,14 @@
+@mixin logo-letter {
+    font-family: $ff-logo;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #101010;
+}
+
+@mixin main-gradient {
+    background: linear-gradient($color-main-600, $color-main-300);
+    color: white;
+    font-weight: $fw-medium;
+    border: none;
+}
