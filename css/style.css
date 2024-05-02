@@ -17,10 +17,20 @@ img {
   max-width: 1100px;
 }
 
-.header {
-  margin-right: -18px;
-  margin-left: -18px;
+.h2-home {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 26px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a :visited {
+  color: #000;
+}
+
 .header__logo {
   width: 200px;
   margin: auto;
@@ -51,12 +61,7 @@ img {
   padding: 35px 18px 57px 18px;
   text-align: center;
 }
-.hero__title {
-  font-size: 24px;
-  font-weight: 700;
-}
 .hero__sub-title {
-  margin-top: 10px;
   font-size: 18px;
   font-weight: 300;
 }
@@ -71,10 +76,7 @@ img {
 }
 
 .fonctionnement {
-  padding: 0 20px 0 20px;
-}
-.fonctionnement__title {
-  margin: 50px auto 26px auto;
+  padding: 50px 20px 50px 20px;
 }
 .fonctionnement__list {
   display: flex;
@@ -108,6 +110,14 @@ img {
   position: absolute;
   left: 0;
   transform: translateX(-12px);
+}
+
+.restaurants {
+  padding: 50px 18px;
+  background-color: #f6f6f6;
+}
+.restaurants__cards {
+  height: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

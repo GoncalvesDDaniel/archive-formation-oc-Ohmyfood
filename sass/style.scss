@@ -40,10 +40,17 @@ img {
     max-width: 1100px;
     // margin: 0 auto;
 }
-
+.h2-home {
+    @include h2-home;
+}
+a {
+    text-decoration: none;
+    color: black;
+    :visited {
+        color: #000;
+    }
+}
 .header {
-    margin-right: -18px;
-    margin-left: -18px;
     &__logo {
         width: 200px;
         margin: auto;
@@ -72,12 +79,8 @@ img {
     margin-top: 4px;
     padding: 35px 18px 57px 18px;
     text-align: center;
-    &__title {
-        font-size: $fs-title;
-        font-weight: $fw-heavy;
-    }
+
     &__sub-title {
-        margin-top: 10px;
         font-size: $fs-sub-title;
         font-weight: $fw-main;
     }
@@ -89,10 +92,8 @@ img {
     }
 }
 .fonctionnement {
-    padding: 0 20px 0 20px;
-    &__title {
-        margin: 50px auto 26px auto;
-    }
+    padding: 50px 20px 50px 20px;
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -126,5 +127,12 @@ img {
         position: absolute;
         left: 0;
         transform: translateX(-12px);
+    }
+}
+.restaurants {
+    padding: 50px 18px;
+    background-color: $color-bg-light;
+    &__cards {
+        height: 250px;
     }
 }
