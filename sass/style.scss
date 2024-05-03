@@ -89,7 +89,6 @@ a {
     }
     &__btn {
         margin-top: 27px;
-        padding: 13px 19px;
         border-radius: 25px;
         @include main-gradient;
     }
@@ -149,13 +148,15 @@ a {
 .restaurants {
     padding: 50px 18px;
     background-color: $color-bg-light;
+    box-shadow: 0 0 0 100vmax $color-bg-light;
+    clip-path: inset(0 -100vmax);
     &__list {
         display: grid;
         gap: 18px;
         @media (max-width: 425px) {
             grid-template-columns: 1fr;
         }
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     }
     &__cards {
         // height: 250px;
@@ -223,6 +224,7 @@ a {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+        gap: 20px;
         padding: 60px 10px 30px 10px;
         &__logo {
             order: 5;
