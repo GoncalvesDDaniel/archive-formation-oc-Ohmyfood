@@ -132,7 +132,51 @@ a {
 .restaurants {
     padding: 50px 18px;
     background-color: $color-bg-light;
+    &__list {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
     &__cards {
-        height: 250px;
+        // height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+    }
+    img {
+        height: 170px;
+        object-fit: cover;
+    }
+    &__badge {
+        display: none;
+    }
+    &__badge--new {
+        display: block;
+        position: absolute;
+        margin: 15px;
+        padding: 7px 9px;
+        color: #008766;
+        background-color: #99e2d0;
+        right: 0;
+        top: 0;
+        font-size: 14px;
+        font-weight: $fw-medium;
+    }
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        background-color: white;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        i {
+            font-size: 24px;
+            font-weight: 300;
+        }
     }
 }
