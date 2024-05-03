@@ -66,7 +66,12 @@ a {
         p {
             font-weight: $fw-medium;
         }
-        @media (min-width: 900px) {
+    }
+    @media (min-width: 770px) {
+        &__logo {
+            padding: 31px;
+        }
+        &__location {
             box-shadow: none;
         }
     }
@@ -87,6 +92,12 @@ a {
         padding: 13px 19px;
         border-radius: 25px;
         @include main-gradient;
+    }
+    @media (min-width: 770px) {
+        margin-top: 0px;
+        &__title {
+            font-size: $fs-title-big;
+        }
     }
 }
 .fonctionnement {
@@ -109,6 +120,14 @@ a {
         font-weight: $fw-medium;
         i {
             margin-right: 20px;
+        }
+    }
+    @media (min-width: 770px) {
+        &__list {
+            flex-direction: row;
+        }
+        &__cards {
+            flex-grow: 1;
         }
     }
 
@@ -197,6 +216,18 @@ a {
         color: #fff;
         i {
             margin-right: 11px;
+        }
+    }
+
+    @media (min-width: 770px) {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 60px 10px 30px 10px;
+        &__logo {
+            order: 5;
+            margin: 0 0 0 50px;
+            margin-right: 5vw;
         }
     }
 }
