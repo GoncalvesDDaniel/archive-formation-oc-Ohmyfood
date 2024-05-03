@@ -36,18 +36,16 @@ img {
     width: 100%;
 }
 .main-container {
-    // padding: 0 18px;
     max-width: 1100px;
-    // margin: 0 auto;
+    margin: auto;
 }
 .h2-home {
     @include h2-home;
 }
 a {
     text-decoration: none;
-    color: black;
     :visited {
-        color: #000;
+        color: inherit;
     }
 }
 .header {
@@ -135,7 +133,10 @@ a {
     &__list {
         display: grid;
         gap: 18px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        @media (max-width: 425px) {
+            grid-template-columns: 1fr;
+        }
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     }
     &__cards {
         // height: 250px;
@@ -169,6 +170,7 @@ a {
         align-items: center;
         padding: 16px;
         background-color: white;
+        color: black;
         &__text {
             display: flex;
             flex-direction: column;
@@ -176,7 +178,25 @@ a {
         }
         i {
             font-size: 24px;
-            font-weight: 300;
+        }
+    }
+}
+.footer {
+    background-color: $color-bg-heavy;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    &__logo {
+        @include logo-letter;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 11px;
+    }
+    &__link {
+        color: #fff;
+        i {
+            margin-right: 11px;
         }
     }
 }

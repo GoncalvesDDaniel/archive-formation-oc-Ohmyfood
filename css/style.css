@@ -15,6 +15,7 @@ img {
 
 .main-container {
   max-width: 1100px;
+  margin: auto;
 }
 
 .h2-home {
@@ -25,10 +26,9 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
 }
 a :visited {
-  color: #000;
+  color: inherit;
 }
 
 .header__logo {
@@ -119,7 +119,12 @@ a :visited {
 .restaurants__list {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+@media (max-width: 425px) {
+  .restaurants__list {
+    grid-template-columns: 1fr;
+  }
 }
 .restaurants__cards {
   border-radius: 15px;
@@ -151,6 +156,7 @@ a :visited {
   align-items: center;
   padding: 16px;
   background-color: white;
+  color: black;
 }
 .restaurants__description__text {
   display: flex;
@@ -159,7 +165,29 @@ a :visited {
 }
 .restaurants__description i {
   font-size: 24px;
-  font-weight: 300;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__logo {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #101010;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 11px;
+}
+.footer__link {
+  color: #fff;
+}
+.footer__link i {
+  margin-right: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */
