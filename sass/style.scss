@@ -30,6 +30,8 @@ $color-bg-heavy: #353535;
 }
 html {
     font-family: $ff-main;
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
 }
 img {
     display: block;
