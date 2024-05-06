@@ -78,7 +78,18 @@ a {
         }
     }
 }
-
+.header__restaurants {
+    display: flex;
+    align-items: center;
+    .header__logo {
+        translate: -29px;
+        // (fa-arrow-left et fa-arrow-left-padding) /2 -- 20+18/2
+    }
+    .fa-arrow-left {
+        padding: 20px;
+        font-size: 18px;
+    }
+}
 .hero {
     background: $color-bg-light;
     margin-top: 4px;
@@ -242,9 +253,20 @@ a {
 
 // Menu page *****
 .menu {
-    &__img {
-        width: 100dvw;
-        // aspect-ratio: 16 / 9;
-        // object-fit: cover;
+    height: 200vh;
+    // &__img {
+    //     width: 100dvw;
+    //     // aspect-ratio: 16 / 9;
+    //     // object-fit: cover;
+    // }
+
+    &__img--fix {
+        height: 250px;
+        background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 1440px;
+        background-position-y: center;
     }
 }
