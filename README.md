@@ -26,6 +26,8 @@ Une page d'accueil et quatre pages de grands restaurants partenaires.
 
 ![Static Badge](https://img.shields.io/badge/CSS3-white?logo=css3&logoColor=%231572B6) CSS avec la mise en place d'animation.
 
+![Static Badge](https://img.shields.io/badge/Sass-white?logo=sass&logoColor=%23CC6699) Prise en main de Sass avec l'écriture Scss.
+
 Javascript non autorisé 🛑
 
 ## Contact
