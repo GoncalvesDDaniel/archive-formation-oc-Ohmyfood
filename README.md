@@ -1,20 +1,22 @@
-# ![Logo](https://user.oc-static.com/upload/2024/02/03/17069637720332_Capture%20d%E2%80%99e%CC%81cran%202024-02-03%20a%CC%80%2014.35.07.png)
+![Logo](https://user.oc-static.com/upload/2024/02/03/17069637720332_Capture%20d%E2%80%99e%CC%81cran%202024-02-03%20a%CC%80%2014.35.07.png)
 
-![Static Badge](https://img.shields.io/badge/Build-In_progress-green)
+![Static Badge](https://img.shields.io/badge/Build-In_progress-green) ![GitHub last commit](https://img.shields.io/github/last-commit/GoncalvesDDaniel/Ohmyfood)
 
-Développer le site vitrine de OhMyFood. Start-Up étrangère qui souhaite s'implanté en France en proposant de composer ses menus à l'avance.
+# Objectif
 
-## Projet n°3
+Pour ce projet, le but est de développer le site vitrine de OhMyFood. Il s'agit d'une start-up étrangère qui souhaite s'implanter en France en proposant un service innovant : permettre aux utilisateurs de composer leurs menus à l'avance.
+
+Cela nécessitera une compréhension approfondie des besoins des utilisateurs, ainsi qu'une conception et une mise en œuvre techniques soignées pour assurer une expérience utilisateur fluide et agréable.
+
+## Détails du projet
 
 Je suis la formation
 **Développeur d'application JavaScript React**
 avec OpenclassRoom.
 
-Le projet n°3 doit nous permettre de renforcer nos connaissances en front-end et d'y ajouter des animations.
+Dans le cadre de ce projet (n°3), l'objectif est de renforcer nos compétences en front-end, notamment en ajoutant des animations à une page web.
 
-Le site doit être responsive et adopte l'approche mobile first.
-
-Une page d'accueil et quatre pages de grands restaurants partenaires.
+Le site sur lequel nous travaillons doit être responsive et adopter une approche "mobile first". Il comprend une page d'accueil et quatre pages dédiées.
 
 ## Maquette
 
@@ -22,16 +24,46 @@ Une page d'accueil et quatre pages de grands restaurants partenaires.
 
 ## Langage
 
-![Static Badge](https://img.shields.io/badge/HTML5-white?logo=html5&logoColor=%23E34F26) HTML avec respect de la sémantique.
+<img  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="logo HTML5" width="50" height="60" align="left" style="padding-right:10px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="logo CSS3" width="50" height="60" align="left" style="padding-right:10px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="logo Sass" width="50" height="60" style="padding-right:10px"/>
 
-![Static Badge](https://img.shields.io/badge/CSS3-white?logo=css3&logoColor=%231572B6) CSS avec la mise en place d'animation.
+-   HTML avec respect de la sémantique
 
-![Static Badge](https://img.shields.io/badge/Sass-white?logo=sass&logoColor=%23CC6699) Prise en main de Sass avec l'écriture Scss.
+-   CSS avec la mise en place d'animation.
 
-Javascript non autorisé 🛑
+-   Prise en main de Sass avec l'écriture Scss.
+
+⛔ L'utilisation de Javascript ou d'un Framework et strictement interdit.
+
+## Roadmap
+
+-   ~~Finir la version "Mobile-first" de l'accueil~~
+
+-   Ajouter les animations
+-   Finir une page restaurant.
+-   Appliquer à toutes les pages restaurants avec le bon contenu.
+-   Vérifier le bon fonctionnement dans son entièreté
+-   Passer le codes aux validateurs W3C
+
+## Installation & Utilisation
+
+Aucune installation est nécessaire.
+
+Le site est en ligne sur ce lien 👉 [GitHub Page](https://goncalvesddaniel.github.io/Ohmyfood/)
+
+## Contributions
+
+Les contributions et les feedback sont toujours les bienvenues.
+
+Veuillez noter que le principal objectif n'est pas l'obtention de solutions toutes faites, mais l'approfondissement des connaissances à travers un échange constructif et enrichissant.
+
+## License
+
+Il convient de noter que bien que mon code soit libre de droits et accessible à tous, tous les autres actifs, tels que les photos, graphiques, logos, textes, etc., ne sont pas ma propriété.
+
+Ces actifs font partie des propriétés intellectuelles d’OpenClassromms et sont donc soumis à des conditions d'utilisation spécifiques. Toute utilisation non autorisée de ces actifs peut constituer une violation des lois sur les droits d'auteur. Il est fortement recommandé de consulter et de respecter les conditions d'utilisation avant toute utilisation.
 
 ## Contact
-
-[![github](https://img.shields.io/badge/Mon_GitHub-%23010409?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GoncalvesDDaniel)
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniel-d-gon%C3%A7alves/)
