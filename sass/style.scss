@@ -37,18 +37,18 @@ img {
     display: block;
     width: 100%;
 }
+a {
+    text-decoration: none;
+    :visited {
+        color: inherit;
+    }
+}
 .main-container {
     max-width: 1100px;
     margin: auto;
 }
 .h2-home {
     @include h2-home;
-}
-a {
-    text-decoration: none;
-    :visited {
-        color: inherit;
-    }
 }
 .header {
     &__logo {
@@ -92,7 +92,7 @@ a {
 }
 .hero {
     background: $color-bg-light;
-    margin-top: 4px;
+    margin-top: -4px;
     padding: 35px 18px 57px 18px;
     text-align: center;
     display: flex;
@@ -102,14 +102,13 @@ a {
     &__sub-title {
         font-size: $fs-sub-title;
         font-weight: $fw-main;
+        margin-bottom: 26px;
     }
     &__btn {
         @include main-gradient;
-
-        margin-top: 26px;
     }
     @media (min-width: 770px) {
-        margin-top: 0px;
+        // margin-top: 0px;
         &__title {
             font-size: $fs-title-big;
         }

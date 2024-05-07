@@ -15,6 +15,13 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+a :visited {
+  color: inherit;
+}
+
 .main-container {
   max-width: 1100px;
   margin: auto;
@@ -24,13 +31,6 @@ img {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 26px;
-}
-
-a {
-  text-decoration: none;
-}
-a :visited {
-  color: inherit;
 }
 
 .header__logo {
@@ -74,7 +74,7 @@ a :visited {
 
 .hero {
   background: #f6f6f6;
-  margin-top: 4px;
+  margin-top: -4px;
   padding: 35px 18px 57px 18px;
   text-align: center;
   display: flex;
@@ -84,6 +84,7 @@ a :visited {
 .hero__sub-title {
   font-size: 18px;
   font-weight: 300;
+  margin-bottom: 26px;
 }
 .hero__btn {
   background: linear-gradient(#ff79da, #9356dc);
@@ -93,12 +94,18 @@ a :visited {
   border-radius: 25px;
   border: none;
   width: fit-content;
-  margin-top: 26px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+.hero__btn::after {
+  content: "";
+  background-color: #fff;
+  opacity: 0;
+}
+.hero__btn:hover {
+  opacity: 0.85;
 }
 @media (min-width: 770px) {
-  .hero {
-    margin-top: 0px;
-  }
   .hero__title {
     font-size: 40px;
   }
@@ -218,6 +225,7 @@ a :visited {
   font-weight: 400;
   font-style: normal;
   color: #101010;
+  margin-top: 26px;
   font-size: 18px;
   color: #fff;
   margin-bottom: 11px;
