@@ -243,17 +243,66 @@ a :visited {
   }
 }
 
-.menu {
-  height: 200vh;
+form {
+  padding: 20px;
 }
-.menu__img--fix {
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border: none;
+  gap: 12px;
+}
+
+legend {
+  content-visibility: hidden;
+}
+
+label {
+  background-color: white;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 25px;
+  width: 100%;
+}
+label span {
+  font-weight: 300;
+}
+
+input {
+  display: none;
+}
+input:checked + label {
+  border: solid 1px red;
+}
+
+.menu__img {
+  object-fit: cover;
   height: 250px;
-  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   max-width: 1440px;
-  background-position-y: center;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  transform: translateY(-30px);
+  background-color: white;
+  padding: 17px;
+}
+.menu__title--logo {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #101010;
+}
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

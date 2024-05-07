@@ -252,21 +252,59 @@ a {
 }
 
 // Menu page *****
-.menu {
-    height: 200vh;
-    // &__img {
-    //     width: 100dvw;
-    //     // aspect-ratio: 16 / 9;
-    //     // object-fit: cover;
-    // }
+form {
+    padding: 20px;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-bg-light;
+    border: none;
+    gap: 12px;
+}
+legend {
+    content-visibility: hidden;
+}
+label {
+    background-color: white;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 25px;
+    width: 100%;
+    span {
+        font-weight: 300;
+    }
+}
+input {
+    display: none;
+    &:checked + label {
+        border: solid 1px red;
+    }
+}
 
-    &__img--fix {
+.menu {
+    &__img {
+        object-fit: cover;
         height: 250px;
-        background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         max-width: 1440px;
-        background-position-y: center;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        transform: translateY(-30px);
+        background-color: white;
+        padding: 17px;
+        &--logo {
+            @include logo-letter;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
     }
 }

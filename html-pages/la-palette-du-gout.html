@@ -40,19 +40,68 @@
             />
         </header>
         <section class="menu">
-            <div class="menu__img--fix"></div>
-            <!-- <img
+            <img
                 src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="image d'un plât avec un pavé de poisson"
                 class="menu__img"
-            /> -->
+            />
             <div class="menu__title">
-                <h1 class="menu__tittle--logo">La palette du goût</h1>
+                <h1 class="menu__title--logo">La palette du goût</h1>
                 <i class="fa-regular fa-heart"></i>
             </div>
         </section>
         <div class="main-container">
-            <form action="" method="get"></form>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Choisisez une entrée</legend>
+                    <h2>Entrée</h2>
+                    <div class="menu__item">
+                        <input
+                            type="radio"
+                            id="entree__1"
+                            name="entree"
+                            value="escargots"
+                        />
+                        <label for="entree__1">
+                            Fricassée d'escargots <br />
+                            <span class="menu__explaination"
+                                >Au piment d'Espelette</span
+                            >
+                        </label>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="menu__item">
+                        <input
+                            type="radio"
+                            id="entree__2"
+                            name="entree"
+                            value="foie-gras"
+                        />
+                        <label for="entree__2">
+                            Foie gras de canard mi-cuit <br />
+                            <span class="menu__explaination"
+                                >Et ses copeaux de truffe noire</span
+                            >
+                        </label>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="menu__item">
+                        <input
+                            type="radio"
+                            id="entree__3"
+                            name="entree"
+                            value="oeuf-au-plat"
+                        />
+                        <label for="entree__3">
+                            Œuf au plat <br />
+                            <span class="menu__explaination"
+                                >Assaisonné à la truffe sur lit de caviar</span
+                            >
+                        </label>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </fieldset>
+            </form>
         </div>
         <footer class="footer">
             <p class="footer__logo">ohmyfood</p>
