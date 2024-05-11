@@ -222,7 +222,8 @@ a {
     &-unliked {
         grid-area: 1 / 1;
         opacity: 1;
-        &:hover {
+        &:hover,
+        &:active {
             opacity: 0;
         }
     }
@@ -230,7 +231,8 @@ a {
         @include heart-gradient;
         grid-area: 1 / 1;
         opacity: 0;
-        &:hover {
+        &:hover,
+        &:active {
             opacity: 1;
         }
     }
