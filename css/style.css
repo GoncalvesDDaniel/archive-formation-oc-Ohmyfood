@@ -209,8 +209,35 @@ a :visited {
   flex-direction: column;
   gap: 5px;
 }
-.restaurants__description i {
+.restaurants__description__i {
   font-size: 24px;
+  display: grid;
+}
+
+.fa-heart {
+  grid-area: 1/1;
+  transition: all 300ms ease-in-out;
+}
+
+.fa-unliked {
+  opacity: 1;
+}
+.fa-unliked:hover, .fa-unliked:active {
+  opacity: 0;
+}
+
+.fa-liked {
+  opacity: 0;
+  background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-liked:hover, .fa-liked:active {
+  opacity: 1;
 }
 
 .footer {
