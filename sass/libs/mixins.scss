@@ -3,7 +3,7 @@
     font-weight: 400;
     font-style: normal;
     color: #101010;
-    margin-top: 26px;
+    // margin-top: 26px;
 }
 
 @mixin main-gradient {
@@ -24,8 +24,6 @@
     &:hover {
         opacity: 0.85;
     }
-}
-@mixin main-gradient-hover {
 }
 
 @mixin h2-home {

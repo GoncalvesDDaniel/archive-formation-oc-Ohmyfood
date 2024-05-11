@@ -16,8 +16,8 @@ $color-main-300: #9356dc;
 $color-main-600: #ff79da;
 $color-second-300: #89c8fa;
 $color-second-600: #003a68;
-$color-third-300: #99e2d0;
-$color-third-600: #008766;
+$color-accepted-300: #99e2d0;
+$color-accepted-600: #008766;
 
 $color-bg-light: #f6f6f6;
 $color-bg-medium: #eaeaea;
@@ -83,7 +83,6 @@ a {
     align-items: center;
     .header__logo {
         translate: -29px;
-        // (fa-arrow-left et fa-arrow-left-padding) /2 -- 20+18/2
     }
     .fa-arrow-left {
         padding: 20px;
@@ -272,21 +271,44 @@ a {
 }
 
 // Menu page *****
-.menu {
-    height: 200vh;
-    // &__img {
-    //     width: 100dvw;
-    //     // aspect-ratio: 16 / 9;
-    //     // object-fit: cover;
-    // }
-
-    &__img--fix {
+.restaurants__page {
+    background-color: $color-bg-light;
+}
+.menu__hero {
+    position: relative;
+    img[class="menu__hero__img"] {
+        object-fit: cover;
         height: 250px;
-        background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         max-width: 1440px;
-        background-position-y: center;
+        // overflow: hidden;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-bg-light;
+        padding: 32px 17px 15px 17px;
+        position: relative;
+        top: -25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        &--logo {
+            @include logo-letter;
+        }
+    }
+    &__i {
+        display: grid;
+        margin-right: 15px;
+    }
+}
+.menu {
+    padding: 0 15px;
+    &__title {
+        // @include h2-home;
+        text-transform: uppercase;
+        font-weight: $fw-main;
+        &--underline {
+            border-bottom: solid 3px $color-accepted-300;
+        }
     }
 }
