@@ -213,28 +213,29 @@ a {
             flex-direction: column;
             gap: 5px;
         }
-        &__like__btn {
+        &__i {
+            font-size: 24px;
             display: grid;
-            &--uncheck,
-            &--check {
-                grid-area: 1 / 1;
-                transition: all 300ms ease-in-out;
-            }
-            &--uncheck {
-                opacity: 1;
-                &:hover,
-                &:active {
-                    opacity: 0;
-                }
-            }
-            &--check {
-                opacity: 0;
-                &:hover,
-                &:active {
-                    opacity: 1;
-                }
-            }
         }
+    }
+}
+.fa-heart {
+    grid-area: 1 / 1;
+    transition: all 300ms ease-in-out;
+}
+.fa-unliked {
+    opacity: 1;
+    &:hover,
+    &:active {
+        opacity: 0;
+    }
+}
+.fa-liked {
+    opacity: 0;
+    @include heart-gradient;
+    &:hover,
+    &:active {
+        opacity: 1;
     }
 }
 
