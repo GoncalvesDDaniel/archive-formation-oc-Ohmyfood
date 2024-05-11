@@ -211,8 +211,27 @@ a {
             flex-direction: column;
             gap: 5px;
         }
-        i {
-            font-size: 24px;
+        &__i {
+            display: grid;
+        }
+    }
+}
+.fa-heart {
+    font-size: 24px;
+
+    &-unliked {
+        grid-area: 1 / 1;
+        opacity: 1;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &-liked {
+        @include heart-gradient;
+        grid-area: 1 / 1;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
         }
     }
 }
