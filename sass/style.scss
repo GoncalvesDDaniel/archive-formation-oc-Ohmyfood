@@ -271,50 +271,68 @@ a {
 }
 
 // Menu page *****
-.restaurants__page {
-    background-color: $color-bg-light;
-}
-.menu__hero {
-    position: relative;
-    img[class="menu__hero__img"] {
-        object-fit: cover;
-        height: 250px;
-        max-width: 1440px;
-    }
-    &__title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $color-bg-light;
-        padding: 32px 17px 15px 17px;
-        position: relative;
-        top: -25px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        &--logo {
-            @include logo-letter;
-        }
-    }
-    &__i {
-        display: grid;
-        margin-right: 15px;
-    }
+// .restaurants__page {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+img[class="menu__img"] {
+    object-fit: cover;
+    height: 250px;
+    max-width: 1440px;
 }
 .menu {
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
+    // padding: 0 15px;
     gap: 12px;
-    &__title {
-        text-transform: uppercase;
-        font-weight: $fw-main;
-        &--underline {
-            border-bottom: solid 3px $color-accepted-300;
+    max-width: 1055px;
+    margin: 0 auto;
+    background-color: $color-bg-light;
+    &__hero {
+        position: relative;
+        &__title {
+            max-width: 1055px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+
+            padding: 32px 17px 0px 17px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            background-color: $color-bg-light;
+
+            position: relative;
+            top: -25px;
+            @media (min-width: 770px) {
+                justify-content: center;
+            }
+            &--logo {
+                @include logo-letter;
+            }
+        }
+        &__i {
+            display: grid;
+            margin-right: 15px;
+        }
+    }
+    &__carte {
+        max-width: 658px;
+        margin: 0 auto;
+        padding: 13px;
+
+        &__title {
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            font-weight: $fw-main;
+            &--underline {
+                border-bottom: solid 3px $color-accepted-300;
+            }
         }
     }
 }
 .plats {
     display: grid;
+    padding: 13px 15px;
     grid-template-areas:
         "title     .    "
         "sub-title price";
@@ -323,10 +341,9 @@ a {
     border-radius: 25px;
     position: relative;
     overflow: hidden;
-    padding: 14px;
-    max-width: 634px;
-    &__text {
-        // overflow: hidden;
+    width: 100%;
+    @media (min-width: 770px) {
+        max-width: 634px;
     }
     &__title {
         grid-area: title;
@@ -365,11 +382,6 @@ a {
         top: 0;
         bottom: 0;
         right: -75px;
-
-        // // top et bottom 0 pour avoir full height de la div
-        // right: -75px;
-        // // décallage pour apparition
-        // padding: 0 20px;
     }
 }
 
@@ -380,5 +392,5 @@ a {
 }
 :is(.plats:hover, .plats:active) :is(.plats__prix) {
     margin-right: 61px;
-    // width check icon - 15px padding
+    // width check icon - 14px padding
 }
