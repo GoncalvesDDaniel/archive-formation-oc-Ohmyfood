@@ -334,6 +334,10 @@ img[class="menu__img"] {
         }
     }
 }
+.menu__carte > * {
+    opacity: 0;
+    // toutes les div sont masqués pour l'effet d'apparition
+}
 .plats {
     display: grid;
     padding: 13px 15px;
@@ -400,8 +404,31 @@ img[class="menu__img"] {
 }
 
 .btn__commander {
-    @include main-gradient;
-    padding: 16px 48px;
     margin: 28px auto 40px auto;
     // calc(40px - 12px) margin-top - gap
+    &--link {
+        @include main-gradient;
+        padding: 16px 48px;
+    }
+}
+
+@keyframes menu-presentation {
+    from {
+        opacity: 0;
+        translate: 0 -100%;
+    }
+    50% {
+        translate: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// for loop pour le delay d'animation du premier enfant 1 au dernier 13 de menu__carte > div:nth-child($i)
+// et on délai l'animation de 200ms par enfant
+@for $i from 1 through 13 {
+    .animation:nth-child(#{$i}) {
+        animation: menu-presentation 500ms ease-out calc($i * 200ms) forwards;
+    }
 }

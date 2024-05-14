@@ -341,6 +341,10 @@ img[class=menu__img] {
   border-bottom: solid 3px #99e2d0;
 }
 
+.menu__carte > * {
+  opacity: 0;
+}
+
 .plats {
   display: grid;
   padding: 13px 15px;
@@ -400,6 +404,9 @@ img[class=menu__img] {
 }
 
 .btn__commander {
+  margin: 28px auto 40px auto;
+}
+.btn__commander--link {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
   font-weight: 500;
@@ -410,15 +417,78 @@ img[class=menu__img] {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease-in-out;
   padding: 16px 48px;
-  margin: 28px auto 40px auto;
 }
-.btn__commander::after {
+.btn__commander--link::after {
   content: "";
   background-color: #fff;
   opacity: 0;
 }
-.btn__commander:hover {
+.btn__commander--link:hover {
   opacity: 0.85;
+}
+
+@keyframes menu-presentation {
+  from {
+    opacity: 0;
+    translate: 0 -100%;
+  }
+  50% {
+    translate: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animation:nth-child(1) {
+  animation: menu-presentation 500ms ease-out 200ms forwards;
+}
+
+.animation:nth-child(2) {
+  animation: menu-presentation 500ms ease-out 400ms forwards;
+}
+
+.animation:nth-child(3) {
+  animation: menu-presentation 500ms ease-out 600ms forwards;
+}
+
+.animation:nth-child(4) {
+  animation: menu-presentation 500ms ease-out 800ms forwards;
+}
+
+.animation:nth-child(5) {
+  animation: menu-presentation 500ms ease-out 1000ms forwards;
+}
+
+.animation:nth-child(6) {
+  animation: menu-presentation 500ms ease-out 1200ms forwards;
+}
+
+.animation:nth-child(7) {
+  animation: menu-presentation 500ms ease-out 1400ms forwards;
+}
+
+.animation:nth-child(8) {
+  animation: menu-presentation 500ms ease-out 1600ms forwards;
+}
+
+.animation:nth-child(9) {
+  animation: menu-presentation 500ms ease-out 1800ms forwards;
+}
+
+.animation:nth-child(10) {
+  animation: menu-presentation 500ms ease-out 2000ms forwards;
+}
+
+.animation:nth-child(11) {
+  animation: menu-presentation 500ms ease-out 2200ms forwards;
+}
+
+.animation:nth-child(12) {
+  animation: menu-presentation 500ms ease-out 2400ms forwards;
+}
+
+.animation:nth-child(13) {
+  animation: menu-presentation 500ms ease-out 2600ms forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
