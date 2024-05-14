@@ -52,7 +52,7 @@ a {
 }
 .header {
     &__logo {
-        width: 200px;
+        max-width: 200px;
         margin: auto;
         padding: 15px;
     }
@@ -271,15 +271,15 @@ a {
 }
 
 // Menu page *****
-// .restaurants__page {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-// }
+
 img[class="menu__img"] {
     object-fit: cover;
     height: 250px;
     max-width: 1440px;
+    margin: 0 auto;
+}
+.restaurants__page {
+    position: relative;
 }
 .menu {
     // padding: 0 15px;
@@ -287,22 +287,22 @@ img[class="menu__img"] {
     max-width: 1055px;
     margin: 0 auto;
     background-color: $color-bg-light;
+
     &__hero {
         position: relative;
         &__title {
+            position: relative;
+            top: -25px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
             max-width: 1055px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 24px;
-
             padding: 32px 17px 0px 17px;
-            border-top-right-radius: 25px;
-            border-top-left-radius: 25px;
             background-color: $color-bg-light;
 
-            position: relative;
-            top: -25px;
             @media (min-width: 770px) {
                 justify-content: center;
             }
@@ -319,9 +319,13 @@ img[class="menu__img"] {
         max-width: 658px;
         margin: 0 auto;
         padding: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
 
         &__title {
-            margin-bottom: 12px;
+            margin-top: 40px;
+            margin-bottom: 3px;
             text-transform: uppercase;
             font-weight: $fw-main;
             &--underline {
@@ -393,4 +397,11 @@ img[class="menu__img"] {
 :is(.plats:hover, .plats:active) :is(.plats__prix) {
     margin-right: 61px;
     // width check icon - 14px padding
+}
+
+.btn__commander {
+    @include main-gradient;
+    padding: 16px 48px;
+    margin: 28px auto 40px auto;
+    // calc(40px - 12px) margin-top - gap
 }

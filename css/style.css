@@ -34,7 +34,7 @@ a :visited {
 }
 
 .header__logo {
-  width: 200px;
+  max-width: 200px;
   margin: auto;
   padding: 15px;
 }
@@ -279,6 +279,11 @@ img[class=menu__img] {
   object-fit: cover;
   height: 250px;
   max-width: 1440px;
+  margin: 0 auto;
+}
+
+.restaurants__page {
+  position: relative;
 }
 
 .menu {
@@ -291,17 +296,17 @@ img[class=menu__img] {
   position: relative;
 }
 .menu__hero__title {
+  position: relative;
+  top: -25px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
   max-width: 1055px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
   padding: 32px 17px 0px 17px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
   background-color: #f6f6f6;
-  position: relative;
-  top: -25px;
 }
 @media (min-width: 770px) {
   .menu__hero__title {
@@ -322,9 +327,13 @@ img[class=menu__img] {
   max-width: 658px;
   margin: 0 auto;
   padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .menu__carte__title {
-  margin-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 3px;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -388,6 +397,28 @@ img[class=menu__img] {
 
 :is(.plats:hover, .plats:active) :is(.plats__prix) {
   margin-right: 61px;
+}
+
+.btn__commander {
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  font-weight: 500;
+  padding: 16px 18px;
+  border-radius: 25px;
+  border: none;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+  padding: 16px 48px;
+  margin: 28px auto 40px auto;
+}
+.btn__commander::after {
+  content: "";
+  background-color: #fff;
+  opacity: 0;
+}
+.btn__commander:hover {
+  opacity: 0.85;
 }
 
 /*# sourceMappingURL=style.css.map */
