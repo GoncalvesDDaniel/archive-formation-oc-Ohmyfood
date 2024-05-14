@@ -427,9 +427,9 @@ img[class="menu__img"] {
     }
 }
 
-// for loop pour le delay d'animation du premier enfant (1) au dernier (13) de menu__carte > div:nth-child($i)
+// for loop pour le delay d'animation du premier enfant (1) au dernier (14) de menu__carte > div:nth-child($i)
 // et on délai l'animation de 200ms par enfant
-@for $i from 1 through 13 {
+@for $i from 1 through 14 {
     .animation:nth-child(#{$i}) {
         animation: menu-presentation 500ms ease-out calc($i * 200ms) forwards;
     }

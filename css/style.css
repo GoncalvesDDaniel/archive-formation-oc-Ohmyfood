@@ -493,4 +493,8 @@ img[class=menu__img] {
   animation: menu-presentation 500ms ease-out 2600ms forwards;
 }
 
+.animation:nth-child(14) {
+  animation: menu-presentation 500ms ease-out 2800ms forwards;
+}
+
 /*# sourceMappingURL=style.css.map */
