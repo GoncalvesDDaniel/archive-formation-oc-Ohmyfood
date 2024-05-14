@@ -324,12 +324,14 @@ img[class="menu__img"] {
         gap: 12px;
 
         &__title {
-            margin-top: 40px;
             margin-bottom: 3px;
             text-transform: uppercase;
             font-weight: $fw-main;
             &--underline {
                 border-bottom: solid 3px $color-accepted-300;
+            }
+            &:not(.first-title) {
+                margin-top: 40px;
             }
         }
     }
@@ -425,7 +427,7 @@ img[class="menu__img"] {
     }
 }
 
-// for loop pour le delay d'animation du premier enfant 1 au dernier 13 de menu__carte > div:nth-child($i)
+// for loop pour le delay d'animation du premier enfant (1) au dernier (13) de menu__carte > div:nth-child($i)
 // et on délai l'animation de 200ms par enfant
 @for $i from 1 through 13 {
     .animation:nth-child(#{$i}) {
