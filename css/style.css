@@ -110,6 +110,7 @@ a :visited {
 }
 .hero__btn:hover {
   opacity: 0.85;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 @media (min-width: 770px) {
   .hero__title {
@@ -434,6 +435,7 @@ img[class=menu__img] {
 }
 .btn__commander--link:hover {
   opacity: 0.85;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes menu-presentation {
