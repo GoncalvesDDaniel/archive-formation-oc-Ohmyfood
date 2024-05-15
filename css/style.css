@@ -221,6 +221,7 @@ a :visited {
 
 .fa-heart {
   font-size: 24px;
+  transition: 300ms ease-in-out;
 }
 .fa-heart-unliked {
   grid-area: 1/1;
