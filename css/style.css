@@ -67,6 +67,8 @@ a :visited {
 .header__restaurants {
   display: flex;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .header__restaurants .header__logo {
   translate: -29px;
