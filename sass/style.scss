@@ -400,7 +400,7 @@ img[class="menu__img"] {
     }
 }
 
-// is() -> "si" plats:hover "alors" plats__check
+// 👇 "si" plats:hover "alors" plats__check ->
 :is(.plats:hover, .plats:active) :is(.plats__check) {
     margin-right: 75px;
     // width check icon
@@ -431,9 +431,11 @@ img[class="menu__img"] {
         opacity: 1;
     }
 }
+//ANIMATION D'APPARITION DES PLATS D'UN MENU
 
 // for loop pour le delay d'animation du premier enfant (1) au dernier (14) de menu__carte > div:nth-child($i)
 // et on délai l'animation de 200ms par enfant
+// 💡 si des élémentes restent chachés, augmenter le nombre de nth-child
 @for $i from 1 through 14 {
     .animation:nth-child(#{$i}) {
         animation: menu-presentation 500ms ease-out calc($i * 200ms) forwards;
