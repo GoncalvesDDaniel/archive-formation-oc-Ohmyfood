@@ -401,7 +401,7 @@ img[class="menu__img"] {
     }
 }
 
-// 👇 "si" plats:hover "alors" plats__check ->
+// select div .plats__check in div .plats:hover
 :is(.plats:hover, .plats:active) :is(.plats__check) {
     margin-right: 75px;
     // width check icon
