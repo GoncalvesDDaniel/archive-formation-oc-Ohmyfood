@@ -52,6 +52,114 @@ img {
   color: #101010;
 }
 
+@keyframes menu-presentation {
+  from {
+    opacity: 0;
+    translate: 0 -100%;
+  }
+  50% {
+    translate: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animation:nth-child(1) {
+  animation: menu-presentation 500ms ease-out 200ms forwards;
+}
+
+.animation:nth-child(2) {
+  animation: menu-presentation 500ms ease-out 400ms forwards;
+}
+
+.animation:nth-child(3) {
+  animation: menu-presentation 500ms ease-out 600ms forwards;
+}
+
+.animation:nth-child(4) {
+  animation: menu-presentation 500ms ease-out 800ms forwards;
+}
+
+.animation:nth-child(5) {
+  animation: menu-presentation 500ms ease-out 1000ms forwards;
+}
+
+.animation:nth-child(6) {
+  animation: menu-presentation 500ms ease-out 1200ms forwards;
+}
+
+.animation:nth-child(7) {
+  animation: menu-presentation 500ms ease-out 1400ms forwards;
+}
+
+.animation:nth-child(8) {
+  animation: menu-presentation 500ms ease-out 1600ms forwards;
+}
+
+.animation:nth-child(9) {
+  animation: menu-presentation 500ms ease-out 1800ms forwards;
+}
+
+.animation:nth-child(10) {
+  animation: menu-presentation 500ms ease-out 2000ms forwards;
+}
+
+.animation:nth-child(11) {
+  animation: menu-presentation 500ms ease-out 2200ms forwards;
+}
+
+.animation:nth-child(12) {
+  animation: menu-presentation 500ms ease-out 2400ms forwards;
+}
+
+.animation:nth-child(13) {
+  animation: menu-presentation 500ms ease-out 2600ms forwards;
+}
+
+.animation:nth-child(14) {
+  animation: menu-presentation 500ms ease-out 2800ms forwards;
+}
+
+@keyframes loading-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes opacity-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacity-fade {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes miette-1 {
+  27% {
+    transform: translateY(0);
+  }
+  45%, 65% {
+    transform: translateY(400%);
+  }
+  55% {
+    transform: translateY(380%);
+  }
+  100% {
+    transform: translateY(400%);
+  }
+}
 .hero__btn, .btn__commander--link {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
@@ -469,74 +577,6 @@ img[class=menu__img] {
   margin-right: 61px;
 }
 
-@keyframes menu-presentation {
-  from {
-    opacity: 0;
-    translate: 0 -100%;
-  }
-  50% {
-    translate: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.animation:nth-child(1) {
-  animation: menu-presentation 500ms ease-out 200ms forwards;
-}
-
-.animation:nth-child(2) {
-  animation: menu-presentation 500ms ease-out 400ms forwards;
-}
-
-.animation:nth-child(3) {
-  animation: menu-presentation 500ms ease-out 600ms forwards;
-}
-
-.animation:nth-child(4) {
-  animation: menu-presentation 500ms ease-out 800ms forwards;
-}
-
-.animation:nth-child(5) {
-  animation: menu-presentation 500ms ease-out 1000ms forwards;
-}
-
-.animation:nth-child(6) {
-  animation: menu-presentation 500ms ease-out 1200ms forwards;
-}
-
-.animation:nth-child(7) {
-  animation: menu-presentation 500ms ease-out 1400ms forwards;
-}
-
-.animation:nth-child(8) {
-  animation: menu-presentation 500ms ease-out 1600ms forwards;
-}
-
-.animation:nth-child(9) {
-  animation: menu-presentation 500ms ease-out 1800ms forwards;
-}
-
-.animation:nth-child(10) {
-  animation: menu-presentation 500ms ease-out 2000ms forwards;
-}
-
-.animation:nth-child(11) {
-  animation: menu-presentation 500ms ease-out 2200ms forwards;
-}
-
-.animation:nth-child(12) {
-  animation: menu-presentation 500ms ease-out 2400ms forwards;
-}
-
-.animation:nth-child(13) {
-  animation: menu-presentation 500ms ease-out 2600ms forwards;
-}
-
-.animation:nth-child(14) {
-  animation: menu-presentation 500ms ease-out 2800ms forwards;
-}
-
 .loader {
   width: 100dvw;
   height: 100dvh;
@@ -658,47 +698,6 @@ img[class=menu__img] {
   font-weight: 400;
   font-style: normal;
   font-size: 5em;
-}
-
-@keyframes loading-bar {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes opacity-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes opacity-fade {
-  from {
-    visibility: visible;
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes miette-1 {
-  27% {
-    transform: translateY(0);
-  }
-  45%, 65% {
-    transform: translateY(400%);
-  }
-  55% {
-    transform: translateY(380%);
-  }
-  100% {
-    transform: translateY(400%);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
