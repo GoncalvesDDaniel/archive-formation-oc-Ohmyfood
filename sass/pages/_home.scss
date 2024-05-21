@@ -10,18 +10,6 @@
     align-items: center;
 }
 
-.hero__sub-title {
-    font-size: $fs-sub-title;
-    font-weight: $fw-main;
-    margin-bottom: 26px;
-}
-
-.hero__title {
-    @media (min-width: 770px) {
-        font-size: $fs-title-big;
-    }
-}
-
 .fonctionnement {
     padding: 50px 20px 50px 20px;
 }
