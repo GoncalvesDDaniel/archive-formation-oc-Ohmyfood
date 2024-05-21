@@ -11,7 +11,6 @@ img[class="menu__img"] {
     position: relative;
 }
 .menu {
-    // padding: 0 15px;
     gap: 12px;
     max-width: 1055px;
     margin: 0 auto;
@@ -37,9 +36,7 @@ img[class="menu__img"] {
         justify-content: center;
     }
 }
-// .menu__hero__title--logo {
-//     @include logo-letter;
-// }
+
 .menu__hero__i {
     display: grid;
     margin-right: 15px;
