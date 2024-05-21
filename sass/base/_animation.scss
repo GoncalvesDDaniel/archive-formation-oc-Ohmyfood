@@ -1,3 +1,7 @@
+// ***********
+// Restaurant menu
+// ***********
+
 //Make the menu appear one by one with for loop
 @keyframes menu-presentation {
     from {
@@ -19,7 +23,10 @@
     }
 }
 
+// ***********
 // LOADER
+// ***********
+
 @keyframes loading-bar {
     // from left to right
     from {
