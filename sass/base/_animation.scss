@@ -1,5 +1,4 @@
 //Make the menu appear one by one with for loop
-
 @keyframes menu-presentation {
     from {
         opacity: 0;
@@ -12,8 +11,7 @@
         opacity: 1;
     }
 }
-
-//  for each div of menu__carte add 200ms delay
+//  for each div of menu__carte -> add 200ms delay
 // 💡 If some elements stay hidden, increase the number of nth-child
 @for $i from 1 through 14 {
     .animation:nth-child(#{$i}) {
@@ -22,7 +20,6 @@
 }
 
 // LOADER
-
 @keyframes loading-bar {
     // from left to right
     from {
