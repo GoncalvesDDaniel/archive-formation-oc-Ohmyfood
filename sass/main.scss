@@ -20,15 +20,6 @@
 
 // Menu page *****
 
-.btn__commander {
-    margin: 28px auto 40px auto;
-    // calc(40px - 12px) margin-top - gap
-    &--link {
-        @include main-gradient;
-        padding: 16px 48px;
-    }
-}
-
 @keyframes menu-presentation {
     from {
         opacity: 0;

@@ -52,7 +52,7 @@ img {
   color: #101010;
 }
 
-.hero__btn {
+.hero__btn, .btn__commander--link {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
   font-weight: 500;
@@ -63,14 +63,22 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease-in-out;
 }
-.hero__btn::after {
+.hero__btn::after, .btn__commander--link::after {
   content: "";
   background-color: #fff;
   opacity: 0;
 }
-.hero__btn:hover {
+.hero__btn:hover, .btn__commander--link:hover {
   opacity: 0.85;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.btn__commander {
+  margin: 28px auto 40px auto;
+}
+
+.btn__commander--link {
+  padding: 16px 48px;
 }
 
 .fa-heart {
@@ -207,18 +215,6 @@ a :visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.hero__sub-title {
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 26px;
-}
-
-@media (min-width: 770px) {
-  .hero__title {
-    font-size: 40px;
-  }
 }
 
 .fonctionnement {
@@ -471,31 +467,6 @@ img[class=menu__img] {
 
 :is(.plats:hover, .plats:active) :is(.plats__prix) {
   margin-right: 61px;
-}
-
-.btn__commander {
-  margin: 28px auto 40px auto;
-}
-.btn__commander--link {
-  background: linear-gradient(#ff79da, #9356dc);
-  color: white;
-  font-weight: 500;
-  padding: 16px 18px;
-  border-radius: 25px;
-  border: none;
-  width: fit-content;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: all 0.2s ease-in-out;
-  padding: 16px 48px;
-}
-.btn__commander--link::after {
-  content: "";
-  background-color: #fff;
-  opacity: 0;
-}
-.btn__commander--link:hover {
-  opacity: 0.85;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes menu-presentation {

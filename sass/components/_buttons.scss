@@ -22,6 +22,15 @@
     }
 }
 
+.btn__commander {
+    margin: 28px auto 40px auto;
+    // calc(40px - 12px) margin-top - gap
+}
+.btn__commander--link {
+    @extend .hero__btn;
+    padding: 16px 48px;
+}
+
 // liked button (heart)
 .fa-heart {
     font-size: 24px;
