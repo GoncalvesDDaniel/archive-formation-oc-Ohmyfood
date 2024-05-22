@@ -1,6 +1,6 @@
 ![Logo](https://user.oc-static.com/upload/2024/02/03/17069637720332_Capture%20d%E2%80%99e%CC%81cran%202024-02-03%20a%CC%80%2014.35.07.png)
 
-![Static Badge](https://img.shields.io/badge/Build-Finish-blue) ![GitHub last commit](https://img.shields.io/github/last-commit/GoncalvesDDaniel/Ohmyfood)
+![Static Badge](https://img.shields.io/badge/Build-In_progress-green) ![GitHub last commit](https://img.shields.io/github/last-commit/GoncalvesDDaniel/Ohmyfood)
 
 # Objectif
 
@@ -39,11 +39,12 @@ Le site sur lequel nous travaillons doit être responsive et adopter une approch
 ## Roadmap
 
 -   ~~Finir la version "Mobile-first" de l'accueil~~
--   ~~Ajouter les animations~~
--   ~~Finir une page restaurant~~
--   ~~Appliquer à toutes les pages restaurants avec le bon contenu~~
--   ~~Vérifier le bon fonctionnement dans son entièreté~~
--   ~~Passer le codes aux validateurs W3C~~
+
+-   Ajouter les animations
+-   Finir une page restaurant.
+-   Appliquer à toutes les pages restaurants avec le bon contenu.
+-   Vérifier le bon fonctionnement dans son entièreté
+-   Passer le codes aux validateurs W3C
 
 ## Installation & Utilisation
 
@@ -56,11 +57,6 @@ Le site est en ligne sur ce lien 👉 [GitHub Page](https://goncalvesddaniel.git
 Les contributions et les feedback sont toujours les bienvenues.
 
 Veuillez noter que le principal objectif n'est pas l'obtention de solutions toutes faites, mais l'approfondissement des connaissances à travers un échange constructif et enrichissant.
-
-## Bugs
-
-Avant de soumettre une requète, consulter d'abord les bugs connus dans la rubrique
-[issues](https://github.com/GoncalvesDDaniel/Ohmyfood/issues).
 
 ## License
 
