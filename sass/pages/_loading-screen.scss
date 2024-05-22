@@ -47,7 +47,7 @@
 
     top: 4%;
     right: 8%;
-    rotate: 18deg;
+    transform: rotate(18deg);
 }
 
 .croc-02 {
@@ -60,7 +60,7 @@
     position: absolute;
     top: -10%;
     right: 9%;
-    rotate: -7deg;
+    transform: rotate(-7deg);
 }
 [class*="croc-1"] {
     height: 7dvw;
