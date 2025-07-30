@@ -1,3 +1,27 @@
+# Dynamisez une page web avec des animations CSS
+
+## 📖 Contexte
+Formation : **Développeur d’application JavaScript React** (OpenClassrooms).  
+Objectif : intégrer en mobile-first l’interface d’une start-up et y ajouter des animations CSS.
+
+**Langages autorisés / imposés :** HTML5, SASS (CSS préprocesseur).
+
+## 🔗 Aperçu
+[Démo du site](https://goncalvesddaniel.github.io/Ohmyfood/)  
+*(Ou ouvrir `index.html` dans un navigateur si non déployé)*
+
+## 🛠️ Compétences travaillées
+- Intégration mobile-first à partir de maquettes Figma  
+- Mise en œuvre d’animations CSS avancées  
+- Structuration optimisée du CSS avec SASS  
+- Utilisation de Git & GitHub pour le versionnement
+- Ecrire un Readme
+
+---
+
+> Code laissé public pour consultation.
+
+
 ![Logo](https://user.oc-static.com/upload/2024/02/03/17069637720332_Capture%20d%E2%80%99e%CC%81cran%202024-02-03%20a%CC%80%2014.35.07.png)
 
 ![Static Badge](https://img.shields.io/badge/Build-Finish-blue) ![GitHub last commit](https://img.shields.io/github/last-commit/GoncalvesDDaniel/Ohmyfood)
